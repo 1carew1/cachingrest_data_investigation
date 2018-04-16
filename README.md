@@ -11,3 +11,10 @@ jupyter-notebook
 
 
 Make sure when running through the notebook you wait for the instacart data to download
+
+## Required Installs
+source activate py3
+# For Mac
+brew install mysql
+# Instal python mysql
+pip install pymysql

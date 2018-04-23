@@ -22,7 +22,7 @@ source activate py3
 conda install jupyter
 conda install seaborn
 conda install -c conda-forge jupyter_contrib_nbextensions
-pip install pymysql
+conda install pymysql
 # Start the notebook
 jupyter-notebook
 ```

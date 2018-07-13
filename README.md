@@ -35,6 +35,15 @@ In general you can view any jupyter notebook publically available by appending t
 Or if hosted on github just use the github link after https://nbviewer.jupyter.org/
 
 ## Download the Data
-The mysql data dump for the iterim can be accessed via : https://drive.google.com/file/d/1tVjDn-SpbBUKIxwhU-9hkkiKUN2ELqLd/view?usp=sharing
+The mysql data file for the final results (as of 2018-07-14) can be accessed via : https://drive.google.com/file/d/1BcAg5hYOdYIijnp1-F6DYT2yuLKorgzS/view?usp=sharing
+
+Once downloaded the data needs to be extracted and this will yield a cachetest.dump file - this dump was take from a MySQL 5.7 install.
+To load in the data
+```
+mysql -u user -p -e "create database cachetest"
+mysql -u user -p cachetest < cachetest.dump
+```
+
+The mysql data dump for the iterim (as of 2018-04-19) can be accessed via : https://drive.google.com/file/d/1tVjDn-SpbBUKIxwhU-9hkkiKUN2ELqLd/view?usp=sharing
 
 Note this data has only one run of each of the cache size tests, so only LRU from 128MB to 1024MB has been tested for hazelcast, redis, memcached and ehcache, once each.
